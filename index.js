@@ -13,6 +13,11 @@ const replaceVal = (tempval, orgval) => {
     tempar = tempar.replace("{%tempstatus%}", orgval.weather.main)
     return tempar;
 }
+
+
+
+
+
 const server = http.createServer((req, res) => {
     if (req.url == "/") {
         requests(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=2c93ab5a7a091f9c5c77cf4423d6358f`)
